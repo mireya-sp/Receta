@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receta de Pizza con Piña</title>
+    <link rel="stylesheet" href="receta.css">
+</head>
+<body>
+    <header>
+        <h1 id="titulo">La receta infalible para dominar la pizza con piña</h1>
+    </header>
+
+    <main>
+        <section class="ingredientes"> 
+            <h2 style="text-align: left; margin-left: 25px;">Ingredientes:</h2>
+            <ul>
+                <li>Una base de pizza</li>
+                <li>4 rodajas de piña</li>
+                <li>200g de queso mozzarella</li>    
+                <li>150g de jamón de York</li>
+                <li>½ cebolla</li>
+                <li>¼ cucharadita de orégano seco</li>
+                <li>Pimienta</li>
+                <li>Sal</li>
+                <li>1 cucharadita de aceite de oliva virgen extra</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Elaboración de la receta de pizza con piña</h2>
+            <p class="elaboracion">
+                <ol>
+                    <li>Precalentar el horno a 180 grados e introducir la base de pizza (te digo como hacer la base de pizza casera aquí) sin relleno durante 4 minutos. Mientras cortamos en trozos la piña, el jamón de York y la cebolla en ‘juliana’.</li>
+                    <li>Transcurrido el tiempo de horno, sacamos la base de pizza, agregamos el queso mozzarella sobre el queso una cucharadita de aceite de oliva, el orégano seco, sal y pimienta.</li>
+                    <li>Una vez tenemos el queso extendido sobre la base de pizza agregamos la piña, el jamón de York y la cebolla. Hornear durante 10-15 minutos o hasta que la veas dorada. ¡Lista la pizza con piña!</li>
+                </ol>
+            </p>
+        </section>
+
+        <section>
+            <h2>Imagen del Resultado Final</h2>
+            <img src="https://i.blogs.es/58a778/pizza-hawaiana3/1366_2000.jpg" alt="Pizza con piña" class="imagen-receta">
+        </section>
+    </main>
+
+    <div>
+        <button id="btn-curiosidad">¿Sabías esto?</button>
+    </div>
+
+    <dialog id="dialog-curiosidad">
+        <p>La pizza con piña, conocida como pizza hawaiana, fue inventada en Canadá en 1962 por Sam Panopoulos.</p>
+        <button id="btn-cerrar">Cerrar</button>
+    </dialog>
+
+    <footer>
+        <p>&copy; 2025 Recetas Caseras</p>
+    </footer>
+
+    <script>
+        const btnCuriosidad = document.getElementById('btn-curiosidad');
+        const dialogCuriosidad = document.getElementById('dialog-curiosidad');
+        const btnCerrar = document.getElementById('btn-cerrar');
+
+        btnCuriosidad.addEventListener('click', () => {
+            dialogCuriosidad.showModal();
+        });
+
+        btnCerrar.addEventListener('click', () => {
+            dialogCuriosidad.close();
+        });
+    </script>
+</body>
+</html>
