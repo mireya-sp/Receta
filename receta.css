@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f0e3;
+}
+
+header {
+    background-color: #ff6347;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+#titulo {
+    font-size: 2em;
+}
+
+h2 {
+    color: #c0392b;
+    text-align: center;
+}
+
+.ingredientes {
+    font-size: 15px;
+    background-color: #ffe4b5;
+    padding: 10px;
+    margin-top: 25px;
+}
+
+.elaboracion {
+    margin: 10px 25px;
+    font-size: 10em;
+}
+
+.imagen-receta {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+div{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background-color: #ff4500;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #cd5c5c;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ff6347;
+    color: white;
+}
+
+/* Diferencia entre Clase e ID */
+/* Las clases (ej. .lista-ingredientes) permiten aplicar estilos a múltiples elementos.
+   Los IDs (ej. #titulo-principal) son únicos y aplican a un solo elemento específico. */
